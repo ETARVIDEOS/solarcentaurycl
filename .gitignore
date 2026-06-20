@@ -1,0 +1,11 @@
+# Windows OS garbage
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo

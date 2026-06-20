@@ -1,0 +1,115 @@
+Plan de Implementación - Sitio Web Solar Centaury
+Este documento detalla el plan de diseño y desarrollo del sitio web para Solar Centaury SpA, ubicado en Temuco. El sitio se construirá utilizando HTML5 semántico, CSS3 moderno (Vanilla, sin Tailwind) y JavaScript nativo para garantizar el máximo rendimiento, interactividad y cumplimiento con las mejores prácticas de UX/SEO.
+
+Decisiones de Diseño y Experiencia de Usuario (UX)
+Paleta de Colores: Basada en www.bioplastic.cl.
+Predominante: Blanco puro y verde bosque tecnológico (sostenibilidad, ecología y profesionalismo).
+Acentos: Amarillo solar / dorado para destacar botones, elementos activos y llamadas a la acción (CTA).
+Tipografía:
+Títulos: Outfit (fuente geométrica moderna, premium y limpia a través de Google Fonts).
+Cuerpo: Inter (alta legibilidad en cualquier dispositivo).
+Efectos y Micro-animaciones:
+Efecto Typing (Escritura) en el texto del Hero.
+Botón "Cotiza tu Proyecto" con animación de sacudida (jiggle/shake) intermitente para guiar la atención del usuario.
+Tarjetas con efecto de desenfoque de cristal (Glassmorphism) y bordes con sutiles gradientes.
+Transiciones de scroll suave (Smooth Scroll) y animaciones de revelado al deslizar (Fade-in / Slide-in).
+Galería con Zoom: Visualización en Lightbox modal para las 33 fotos de trabajos reales realizados.
+Estructura de Secciones Propuesta
+El sitio web será una Single Page Application (SPA) altamente optimizada, estructurada de la siguiente manera:
+
+Header & Navegación:
+
+Menú responsivo (tipo hamburguesa en móvil) con enlaces de ancla: Inicio, Nosotros, Servicios, Galería, Reseñas, Calculadora, Preguntas, Contacto.
+Logo de Solar Centaury con carga responsiva.
+Botón destacado "Cotiza tu Proyecto".
+Hero (Sección Inicio):
+
+Video de fondo en bucle, sin sonido, con overlay oscuro de gradiente para dar contraste al texto.
+Ruta del video: ARCHIVOS WEB/HERO/VIDE_EN_HD_DE_INSTALACION_DE.mp4
+Texto principal: "Realizamos tus proyectos eléctricos y de energía renovable a tu medida!!!" (animado con efecto de máquina de escribir).
+Botón verde animado que se sacude: "Cotiza tu Proyecto" (desplaza a la calculadora).
+Nosotros (¿Quiénes somos?):
+
+Reseña institucional basada en la información proporcionada.
+Imagen del equipo: ARCHIVOS WEB/EQUIPO/Gemini_Generated_Image_cro6pcro6pcro6pc.png.
+Métricas Dinámicas (Contador Incremental) adaptadas a la marca:
+10+ Años de Experiencia en el sector eléctrico.
+500+ Proyectos Realizados (residenciales e industriales).
+1.2 MW+ Potencia Fotovoltaica Instalada.
+100% Clientes Satisfechos en la Región.
+Nuestros Servicios (Categorías Principales):
+
+Tarjetas responsivas con hover dinámico:
+Proyectos Eléctricos: ARCHIVOS WEB/FOTOS DE SISTEMAS/PROYECTO ELECTRICO/PROYECTO ELECTRICO.png
+Sistemas Fotovoltaicos: ARCHIVOS WEB/FOTOS DE SISTEMAS/Sistema Hibrido (On- Grid Bidireccional)/SISTEMA HIBRIDO ON GRID BIDIRECCIONA.png
+Sistemas de Seguridad: ARCHIVOS WEB/FOTOS DE SISTEMAS/SISTEMAS DE SEGURIDAD/SISTEMAS DE SEGURIDAD.png
+Servicios Detallados:
+
+Subsección interactiva con pestañas o acordeones para detallar:
+Instalaciones Eléctricas: Residencial (SEC, empalmes, bombas de agua) e Industrial (tableros, control inalámbrico).
+Energía Solar: Explicación de la Ley Net-Billing (Ley 20.571) y los 3 sistemas fotovoltaicos con galerías de imágenes filtrables:
+On-grid (Grid-tie).
+Off-grid (Aislado, con baterías).
+Híbrido (Autonomía + Inyección a la red).
+Sistemas de Seguridad: Alarmas wifi y cámaras de vigilancia con respaldo y monitoreo móvil.
+Galería de Trabajos Realizados:
+
+Grilla interactiva que muestra las 33 fotos reales ubicadas en ARCHIVOS WEB/fotos trabajos realizados.
+Botón de carga incremental (e.g. "Ver más fotos") para optimizar el rendimiento de carga inicial.
+Lightbox modal nativo al hacer clic en cualquier imagen, permitiendo verla ampliada y navegar entre fotos con botones de flecha.
+Reseñas (Opiniones):
+
+Carrusel o grilla de testimonios adaptados a los servicios eléctricos y solares de la empresa (e.g., testimonios de instalación residencial On-Grid en Temuco, mantención industrial y sistemas Off-grid en parcelas).
+Zonas de Cobertura (Marquee Continuo):
+
+Banner animado que se mueve horizontalmente de forma infinita mostrando las comunas principales de la Araucanía:
+TEMUCO • PADRE LAS CASAS • VILLARRICA • PUCÓN • LAUTARO • NUEVA IMPERIAL • ANGOL • VICTORIA • CARAHUE • GORBEA
+Calculadora (Cotizador Solar & Eléctrico Inteligente):
+
+Rediseño completo de la calculadora de mudanza para convertirla en un Cotizador Solar Interactivo:
+Paso 1: Contacto: Nombre, WhatsApp, Email, Comuna y Fecha estimada de proyecto.
+Paso 2: Tipo de Solución: Selección del servicio principal (Solar On-Grid, Solar Off-Grid, Solar Híbrido, Proyecto Eléctrico, Seguridad).
+Paso 3: Dimensionamiento Dinámico:
+Si selecciona On-Grid/Híbrido: El usuario selecciona su gasto mensual en electricidad (CLP). El sistema calcula el tamaño sugerido del kit solar (kWp), número estimado de paneles y el ahorro proyectado.
+Si selecciona Off-Grid (Consumo): El usuario puede marcar los electrodomésticos que desea energizar (Refrigerador, Luces LED, TV, Laptop, Bomba de agua, Microondas) con sus cantidades y horas de uso diario. El sistema calcula dinámicamente el consumo diario total en Wh y recomienda la capacidad de baterías y potencia de paneles requerida.
+Paso 4: Entorno de Instalación: Tipo de techumbre (Zinc, Tejas, Losa, Suelo) y presencia de sombras.
+Paso 5: Resumen y Conversión: Muestra un resumen técnico detallado del sistema estimado y un botón destacado: "Enviar Propuesta por WhatsApp" que formatea todos los datos de la cotización y abre el chat directamente con el número de la empresa.
+Contacto & Ubicación:
+
+Formulario de consulta directa.
+Mapa embebido (Google Maps) con la ubicación en Vicuña Mackenna 678, Temuco.
+Información corporativa: RUT 78.432.361-7, correo contacto@solarcentaury.cl, teléfono de contacto y enlace a Instagram (https://www.instagram.com/solarcentaury?utm_source=qr&igsh=MWU5YWxheWk0bHQ2dg==).
+Footer (Pie de página):
+
+Enlaces de navegación rápidos, redes sociales (Instagram y WhatsApp), créditos de desarrollo e indexación SEO.
+Botón Flotante de WhatsApp:
+
+Ubicado en la esquina inferior con animación de rebote y enlace directo a chat.
+Archivos a Crear y Modificar
+[NEW] 
+index.html
+Estructura principal con metadatos SEO enriquecidos (títulos, descripciones en español, Open Graph, y etiquetas específicas de indexación para motores de búsqueda tradicionales y LLMs de IA).
+[NEW] 
+styles.css
+Hoja de estilos en vanilla CSS que define el diseño responsivo, variables CSS de la paleta de colores (Blanco/Verde/Amarillo), tipografías, grillas de servicios, marquee continuo, slider de galería, carrusel de reseñas, efectos glassmorphism, y la animación de sacudida del botón de cotización.
+[NEW] 
+main.js
+Lógica interactiva del sitio: menú móvil, efecto typing en el Hero, contadores numéricos dinámicos con IntersectionObserver (se activan al hacer scroll), Lightbox de galería, carrusel de reseñas y el envío de formularios.
+[NEW] 
+calculator.js
+Algoritmo de dimensionamiento solar y consumo Off-Grid. Actualización reactiva del cubicaje de consumo en Wh/day, cantidad de paneles y baterías necesarias, y formateo final del mensaje detallado para enviar directamente a WhatsApp.
+[NEW] 
+robots.txt
+Archivo optimizado para buscadores tradicionales y rastreadores de IA/LLMs (permitiendo indexación total), actualizado con el sitemap correspondiente a www.solarcentaury.cl.
+Plan de Verificación
+Pruebas Automatizadas e Indexación
+Validación HTML5 y CSS3: Comprobación de que la sintaxis cumple con los estándares W3C.
+Rendimiento y SEO (Lighthouse): Verificación del rendimiento, accesibilidad, mejores prácticas de desarrollo y optimización SEO (meta-tags completos, canonicals, estructura de headings H1-H6).
+Verificación Manual
+Prueba Responsiva: Validación de la interfaz en resoluciones móviles, tabletas y computadores de escritorio.
+Prueba del Cotizador Solar:
+Verificar que al cambiar los valores de gasto mensual se recalculen correctamente los kWp y cantidad de paneles.
+Verificar que en Off-Grid al añadir electrodomésticos y horas de uso se actualice dinámicamente la cubicación en Wh y el resumen técnico.
+Validar que al enviar el formulario se genere el mensaje con el formato adecuado y se redirija correctamente a WhatsApp Web / App (https://wa.me/56920765348) con los datos completados.
+Prueba de Galería y Lightbox: Asegurar que las imágenes carguen de forma optimizada y el visualizador modal funcione correctamente al hacer clic en las 33 fotos de proyectos.
+Verificación de Video de Fondo: Comprobar que el video en el Hero se reproduzca de forma continua, en bucle y silenciado, sin bloquear el renderizado del texto principal.
