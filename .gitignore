@@ -9,3 +9,7 @@ $RECYCLE.BIN/
 .idea/
 *.swp
 *.swo
+
+# Temporary files
+~$*
+*.tmp

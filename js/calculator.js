@@ -201,7 +201,7 @@ function calculateSolarSizing() {
     if (!totalM3Span) return;
 
     if (!service) {
-        totalM3Span.textContent = "0,00 kWp";
+        totalM3Span.textContent = "0,00 kW";
         if (resultLabel) resultLabel.textContent = "Seleccione un servicio arriba";
         if (resultDetails) resultDetails.style.display = "none";
         return;
@@ -212,13 +212,13 @@ function calculateSolarSizing() {
         const billAmount = parseFloat(billAmountVal) || 0;
 
         if (billAmount <= 0) {
-            totalM3Span.textContent = "--- kWp";
+            totalM3Span.textContent = "--- kW";
             if (resultLabel) resultLabel.textContent = "Ingrese el valor de su boleta";
             if (resultDetails) resultDetails.style.display = "none";
             return;
         }
 
-        // Temuco: ~$160 CLP per kWh. Peak Sun Hours (HSP): 3.3 hrs/day. Panel capacity: 500W (0.5 kWp).
+        // Temuco: ~$160 CLP per kWh. Peak Sun Hours (HSP): 3.3 hrs/day. Panel capacity: 500W (0.5 kW).
         const monthlyKwh = billAmount / 160;
         const dailyKwh = monthlyKwh / 30;
         const requiredKwp = dailyKwh / 3.3; // Sizing based on HSP
@@ -229,7 +229,7 @@ function calculateSolarSizing() {
         const monthlySavings = Math.round(billAmount * 0.85);
         const co2Offset = Math.round(finalKwp * 3.3 * 365 * 0.4); // 0.4 kg CO2 per kWh
 
-        totalM3Span.textContent = `${finalKwp.toFixed(2)} kWp`;
+        totalM3Span.textContent = `${finalKwp.toFixed(2)} kW`;
         if (resultLabel) resultLabel.textContent = "Dimensionamiento sugerido para On-Grid";
 
         if (resultDetails) {
@@ -290,7 +290,7 @@ function calculateSolarSizing() {
         if (resultDetails) {
             resultDetails.style.display = "block";
             resultDetails.innerHTML = `
-                <div class="result-detail-item"><strong>Paneles sugeridos:</strong> <span>${numPanels} paneles de 500W (${finalKwp.toFixed(1)} kWp)</span></div>
+                <div class="result-detail-item"><strong>Paneles sugeridos:</strong> <span>${numPanels} paneles de 500W (${finalKwp.toFixed(1)} kW)</span></div>
                 <div class="result-detail-item"><strong>Baterías recomendadas:</strong> <span>${batteryKwh.toFixed(1)} kWh (Banco de Litio)</span></div>
                 <div class="result-detail-item"><strong>Inversor sugerido:</strong> <span>${suggestedInverterKw} kW (Onda senoidal pura)</span></div>
                 <div class="result-detail-item-note">🔋 Diseñado con 1 día de autonomía. Se recomiendan baterías de Litio de ciclo profundo por su mayor vida útil y eficiencia.</div>
@@ -350,7 +350,7 @@ function handleFormSubmit(e) {
         message += `📊 *Estimación Solar (Temuco/Araucanía):*\n`;
         message += `- *Boleta mensual actual:* $ ${parseFloat(billAmount).toLocaleString('es-CL')} CLP\n`;
         message += `- *Consumo mensual est.:* ~${Math.round(monthlyKwh)} kWh/mes\n`;
-        message += `- *Tamaño planta sugerida:* ${finalKwp.toFixed(2)} kWp\n`;
+        message += `- *Tamaño planta sugerida:* ${finalKwp.toFixed(2)} kW\n`;
         message += `- *Cantidad de paneles:* ${numPanels} paneles de 500W\n`;
         message += `- *Ahorro mensual est.:* $ ${monthlySavings.toLocaleString('es-CL')} CLP\n\n`;
     } 
@@ -375,7 +375,7 @@ function handleFormSubmit(e) {
 
         message += `📊 *Estimación Off-Grid (Consumo Autónomo):*\n`;
         message += `- *Consumo estimado:* ${dailyKwh.toFixed(2)} kWh/día\n`;
-        message += `- *Paneles solares:* ${numPanels} paneles de 500W (${finalKwp.toFixed(1)} kWp)\n`;
+        message += `- *Paneles solares:* ${numPanels} paneles de 500W (${finalKwp.toFixed(1)} kW)\n`;
         message += `- *Banco de baterías:* ${batteryKwh.toFixed(1)} kWh (Litio)\n`;
         message += `*Detalle de consumos seleccionados:*\n${itemsList}\n`;
     }

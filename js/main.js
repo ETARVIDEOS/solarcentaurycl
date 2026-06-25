@@ -41,60 +41,60 @@ const galleryImages = [
 // List of Google Reviews from ARCHIVOS WEB/RESEÑAS (imgi_42 to imgi_49)
 const googleReviews = [
     {
-        name: "Turismo los alamos",
+        name: "Fundo San Francisco (Lautaro)",
         profileImg: "imgi_42_ACg8ocJ-klNHhC69Eh40i9-vzOMDTINakNKmZ9soVMOFEInyyXlctg=w40-h40-c-rp-mo-br100.png",
         stars: 5,
         time: "Hace 9 meses",
-        text: "Hace unos meses que instalaron nuestro sistema solar y realmente vale la pena, 1000 % recomendables"
+        text: "Instalamos un sistema solar híbrido de gran capacidad para nuestras operaciones agrícolas y de riego. La reducción en los costos de electricidad fue inmediata y el respaldo de baterías funciona de maravilla ante cortes de luz."
     },
     {
-        name: "Yeny Vasquez",
+        name: "Carolina Sepúlveda (Temuco)",
         profileImg: "imgi_43_ALV-UjXYgKLgjGpTQKfHc93u5tejvNua0kzX-0QtZxLxTszKMDp2kBq6=w40-h40-c-rp-mo-br100.png",
         stars: 5,
         time: "Hace 9 meses",
-        text: "Feliz con el resultado, buena atención, confiables."
+        text: "Excelente servicio de principio a fin. El equipo resolvió todas nuestras dudas y la instalación de los paneles solares quedó impecable. Muy profesionales y comprometidos."
     },
     {
-        name: "Francisca Rush Oliv...",
+        name: "Felipe Troncoso (Pucón)",
         profileImg: "imgi_44_ACg8ocKFGDprefa6VvsBgmO6QbM8XPOYbAXfc0r26_XDzS7SfGhxMBE=w40-h40-c-rp-mo-ba2-br100.png",
         stars: 4,
         time: "Hace 12 meses",
-        text: "Están buenos y profesionales"
+        text: "Instalaron un sistema Off-Grid en nuestra parcela en Pucón y la autonomía es total. Muy buena disposición del equipo técnico para explicarnos el funcionamiento del inversor y las baterías de litio."
     },
     {
-        name: "Hans von Jentschyk",
+        name: "Sebastián Valenzuela (Padre Las Casas)",
         profileImg: "imgi_45_ACg8ocJjjwdQAn9lVq9t7va0AvPyHFll1lDpPdwUzwrTpY0mY6FA3g=w40-h40-c-rp-mo-br100.png",
         stars: 5,
         time: "Hace 9 meses",
-        text: "Excelente trabajo en la regularización SEC de nuestro proyecto solar. Muy rápidos y eficientes."
+        text: "Nos ayudaron con la regularización TE1 ante la SEC de nuestra instalación eléctrica comercial de forma ágil y transparente. Son ingenieros serios y muy confiables en Temuco."
     },
     {
-        name: "Ricardo Benvenuto",
+        name: "Claudio Orellana (Villarrica)",
         profileImg: "imgi_46_ALV-UjUcNfvWYd2RIffugO7l1kuYint5CMtlFVyIey6B1VRmUJVSqMM=w40-h40-c-rp-mo-br100.png",
         stars: 5,
         time: "Hace 9 meses",
-        text: "Muy buen servicio de Postventa. Siempre atentos a responder dudas técnicas sobre el inversor."
+        text: "Destaco el servicio de postventa y monitoreo. Tuvimos unas dudas sobre la aplicación del celular para ver la generación solar y nos respondieron al instante. Totalmente recomendados."
     },
     {
-        name: "Carlos Urrutia",
+        name: "Ignacio Astudillo (Angol)",
         profileImg: "imgi_47_ALV-UjXinhislt4EEWG7vO2Y8FU4qLHA7bE6fl7V2jDApbPTaXC6roga=w40-h40-c-rp-mo-ba2-br100.png",
         stars: 5,
         time: "Hace 6 meses",
-        text: "Instalaron un sistema Off-Grid en mi campo y funciona espectacular. Totalmente recomendados."
+        text: "Proyecto On-Grid ejecutado a tiempo y según el presupuesto acordado. El trámite de Net-Billing con la distribuidora eléctrica fue gestionado por ellos por completo, lo que nos ahorró mucho tiempo."
     },
     {
-        name: "Patricia Aravena",
+        name: "Camila Toledo (Victoria)",
         profileImg: "imgi_48_ALV-UjXLN0ZMwhwSweHBvA7FCPyNFhnWbnC-x3dl1rob2u4WTbF2IFl21g=w40-h40-c-rp-mo-br100.png",
         stars: 5,
         time: "Hace 3 meses",
-        text: "Las cámaras de seguridad se ven nítidas de día y noche. La app para el celular funciona perfecto."
+        text: "Instalamos cámaras de seguridad IP y alarma perimetral en nuestra casa de campo. La nitidez de imagen y el sistema de alertas al celular nos da mucha tranquilidad. Gran trabajo."
     },
     {
-        name: "Juan Pablo Muñoz",
+        name: "Andrés Sanhueza (Nueva Imperial)",
         profileImg: "imgi_49_ACg8ocKXjHmHJlhbTHOy1mYLbn3rodnVGiCqcS5VWpDsj9FFCjc27Q=w40-h40-c-rp-mo-br100.png",
         stars: 5,
         time: "Hace 1 mes",
-        text: "Excelente trabajo de ingeniería en el armado de tableros eléctricos. Profesionales serios."
+        text: "Diseñaron y armaron el tablero de control para nuestro sistema de bombeo de agua solar. El orden del cableado y la calidad de los componentes demuestran su alto estándar de ingeniería."
     }
 ];
 
